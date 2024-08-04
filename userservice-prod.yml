@@ -1,0 +1,6 @@
+info:
+  message: "userservice prod"
+
+logging:
+  level:
+    root: INFO

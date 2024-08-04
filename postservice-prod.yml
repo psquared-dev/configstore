@@ -1,0 +1,6 @@
+info:
+  message: "postservice prod"
+
+logging:
+  level:
+    root: INFO
