@@ -1,0 +1,6 @@
+info:
+  message: "userservice qa"
+
+logging:
+  level:
+    root: INFO

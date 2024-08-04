@@ -1,0 +1,6 @@
+info:
+  message: "postservice qa"
+
+logging:
+  level:
+    root: INFO
