@@ -13,11 +13,8 @@ spring:
       hibernate:
         format_sql: true
 
-config:
-  import: "configserver:http://localhost:8071"
-
 server:
-  port: 8081
+  port: 8082
   servlet:
     context-path: /postservice
 
