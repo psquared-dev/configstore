@@ -30,10 +30,6 @@ management:
     env:
       enabled: true
 
-#endpoints:
-#  shutdown:
-#    enabled: true
-
 server:
   port: 8082
   servlet:
