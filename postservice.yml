@@ -40,7 +40,6 @@ server:
     context-path: /postservice
 
 info:
-  message: "postservice default"
   app:
     name: "postservice"
     description: "postservice"
