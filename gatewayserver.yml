@@ -1,0 +1,33 @@
+server:
+  port: 8072
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      probes:
+        enabled: true
+    gateway:
+      enabled: true
+  info:
+    env:
+      enabled: true
+
+info:
+  app:
+    name: "gatewayserver"
+    description: "gatewayserver"
+    version: 1.0
+
+eureka:
+  instance:
+    preferIpAddress: true
+
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: "${EUREKA_SERVER:http://localhost:8070/eureka/}"
