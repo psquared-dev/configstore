@@ -1,3 +1,6 @@
+server:
+  port: 8081
+
 spring:
   application:
     name: userservice
@@ -34,8 +37,9 @@ management:
     env:
       enabled: true
 
-server:
-  port: 8081
+  metrics:
+    tags:
+      application: ${spring.application.name}
 #  servlet:
 #    context-path: /userservice
 

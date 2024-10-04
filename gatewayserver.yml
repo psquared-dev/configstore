@@ -17,11 +17,21 @@ management:
       probes:
         enabled: true
 
+  metrics:
+    tags:
+      application: ${spring.application.name}
+
 info:
   app:
     name: "gatewayserver"
     description: "gatewayserver"
     version: 1.0
+
+logging:
+  level:
+    root: DEBUG
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
 
 eureka:
   instance:
